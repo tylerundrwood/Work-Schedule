@@ -45,12 +45,12 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ba3c35;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #34ba34;
   color: white;
 }
 
@@ -58,11 +58,38 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #02b6de;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.user-to-do:active {
+  border: 2px solid black;
+}
+
+.time-of-day {
+  font-size: 18px;
+}
+
+.test {
+  border-right: 2px solid black;
+  margin-bottom: 17px;
+}
+
+.btn-move {
+  height: 70px;
+  width: 160px;
+  margin-bottom: 30px;
+}
+
+.text-input {
+  color: black;
+}
+
+.text-input:focus {
+  border: 2px solid black;
 }
