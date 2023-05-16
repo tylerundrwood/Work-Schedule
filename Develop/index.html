@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="graph">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+    
+
+      <!-- 9am bar -->
+     <div class="row d-flex align-items-center my-2">
+      <div class="col-2 test">
+        <div class="time-of-day hour">9am</div>
+      </div>
+      <div class="form-group col-8">
+        <textarea class="form-control text-input" id="user-form-1" data-time="9" rows="3"></textarea>
+      </div>
+      <div class="col-2">
+        <button type="button" class="btn primary btn-move"id="save-button-1">Save Plan</button>
+      </div>
+     </div>
+
+      <!-- 10am bar -->
+      <div class="row d-flex align-items-center my-2">
+        <div class="col-2 test">
+          <div class="time-of-day hour">10am</div>
+        </div>
+        <div class="form-group col-8">
+          <textarea class="form-control text-input" id="user-form-2" data-time="10" rows="3"></textarea>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-primary btn-move" id="save-button-2">Save Plan</button>
+        </div>
+      </div>
+
+      <!-- 11am bar -->
+      <div class="row d-flex align-items-center my-2">
+        <div class="col-2 test">
+          <div class="time-of-day hour">10am</div>
+        </div>
+        <div class="form-group col-8">
+          <textarea class="form-control text-input" id="user-form-3" data-time="10" rows="3"></textarea>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-primary btn-move" id="save-button-3">Save Plan</button>
+        </div>
+      </div>
+
+      <!-- 12pm bar-->
+      <div class="row d-flex align-items-center my-2">
+        <div class="col-2 test">
+          <div class="time-of-day hour">12pm</div>
+        </div>
+        <div class="form-group col-8">
+          <textarea class="form-control text-input" data-time="12" id="user-form-4" rows="3"></textarea>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-primary btn-move" id="save-button-4">Save Plan</button>
+        </div>
+      </div>
+
+ <!-- 1pm bar-->
+ <div class="row d-flex align-items-center my-2">
+  <div class="col-2 test">
+    <div class="time-of-day hour">1pm</div>
+  </div>
+  <div class="form-group col-8">
+    <textarea class="form-control text-input" data-time="13" id="user-form-5" rows="3"></textarea>
+  </div>
+  <div class="col-2">
+    <button type="button" class="btn btn-primary btn-move" id="save-button-5">Save Plan</button>
+  </div>
+</div>
+
+ <!-- 2pm bar-->
+ <div class="row d-flex align-items-center my-2">
+  <div class="col-2 test">
+    <div class="time-of-day hour">2pm</div>
+  </div>
+  <div class="form-group col-8">
+    <textarea class="form-control text-input" data-time="14" id="user-form-6" rows="3"></textarea>
+  </div>
+  <div class="col-2">
+    <button type="button" class="btn btn-primary btn-move" id="save-button-6">Save Plan</button>
+  </div>
+</div>
+
+<!-- 3pm bar-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
