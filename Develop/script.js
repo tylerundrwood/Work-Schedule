@@ -107,3 +107,18 @@ saveBtnEl9.addEventListener('click', function() {
   let userInputEl9 = document.querySelector('#user-form-9').value;
   localStorage.setItem('userInputEl9', userInputEl9);
 });
+
+function displayColors() {
+  //time variable set to military time   
+  let time = moment().format("H");
+  //switching through the data-times in which the time variables are both military times
+   for(let x = 9; x < 18; x++) {
+      let hourEl = $('.form-group').find(`[data-time=${x}]`)
+          if (time == x) {
+              hourEl.addClass("present"); 
+          } else if (time > x) {
+              hourEl.addClass("past"); 
+              hourEl.addClass("future") 
+          }
+   }
+}

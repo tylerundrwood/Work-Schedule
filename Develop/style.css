@@ -40,8 +40,12 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #858383aa;
   color: white;
+}
+
+.form-control {
+  background-color: rgb(176, 171, 171);
 }
 
 .present {
