@@ -62,6 +62,7 @@ userInputEl8.textContent = userStoredData8;
 let userStoredData9 = localStorage.getItem("userInputEl9");
 userInputEl9.textContent = userStoredData9;
 
+
 //event listeners for save buttons
 saveBtnEl1.addEventListener('click', function(){
   let userInputEl1 = document.querySelector('#user-form-1').value;
@@ -118,7 +119,8 @@ function displayColors() {
               hourEl.addClass("present"); 
           } else if (time > x) {
               hourEl.addClass("past"); 
-              hourEl.addClass("future") 
+            } else {
+              hourEl.addClass("future");
           }
    }
 }

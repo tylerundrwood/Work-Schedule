@@ -30,7 +30,12 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  white-space: pre-wrap;
+  height: 80px;
+}
+
+.form-control {
+  background-color: rgb(212, 210, 210);
 }
 
 .hour {
@@ -42,10 +47,6 @@ textarea {
 .past {
   background-color: #858383aa;
   color: white;
-}
-
-.form-control {
-  background-color: rgb(176, 171, 171);
 }
 
 .present {
