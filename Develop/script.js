@@ -124,3 +124,4 @@ function displayColors() {
           }
    }
 }
+displayColors();
